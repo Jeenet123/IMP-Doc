@@ -1,0 +1,246 @@
+												Index
+												
+												
+											1)  Git Hub login
+											2)  Push  image to docker  / push docker repo  
+											3)  Check the images is pushed
+											4)  Open opolo portal login credentials
+											5)  Basic Terminal Commands
+											6)  Connecting True VPN
+											7)  Git Push
+											8)  Git Merge
+											9)  Open a project path then go through below commands
+											10) Push an existing repository from the command line
+											11) Down kafka     
+											12) how to test in obj 
+											13) Add Lombok
+											14) JSONnull
+											15) Tomcat issue
+											16) AWS Crendencials
+											17) Couchabse flush
+											18) how to go inside docker container
+											19)
+											20)	
+
+
+
+
+
+
+
+
+Git Hub 
+--------
+ 
+https://hub.docker.com
+
+
+username: shady189
+password : airtel@189
+
+Push  image to docker  / push docker repo  
+-----------------------------------------
+
+Open terminal
+docker login
+
+username: shady189
+password : airtel@189
+
+docker push knowesis/sift-so-true:true-bulletin-v1.5
+
+Check the images is pushed
+--------------------------
+
+Open chrome
+username: shady189
+password : airtel@189
+View images on docker hub : 
+https://hub.docker.com/r/knowesis/sift-so-true/tags
+
+# change docker image tag
+	docker tag old_image_tag_name new_image_tag_name
+
+Open opolo portal
+-----------------
+
+https://p5.opolo.app/
+
+Username : admin
+Password : sift@123
+
+
+Terminal Commands
+-----------------
+
+free -mh
+      Used to find ram availability
+ git clone <link https>
+      Used to pull code
+rm -rf messenger.war
+      remove messanger.war command
+./mvnw spring-boot:run
+         run spring boot
+         
+         
+         
+
+True VPN
+---------
+
+
+Pulse secure password is changed. Please find below
+
+https://luna.truedigital.com/external
+vijila_vij
+Vishnu#1234567890
+
+
+Git Push
+--------
+
+#git push
+
+git status
+git diff (className path)
+   -----ctrl + z (exit)
+git add -A
+git status
+git commit -m "commit msg"
+git pull
+git push -u origin main
+
+git config --global user.email "jeenet.kj@seqato.com"
+git config --global user.name "jeenet.kj"
+
+
+Git Merge
+----------
+
+git checkout develop
+
+git pull origin develop
+
+git merge feature-branch //  you can merge the branch you want to bring changes from (let's call it feature-branch) into the develop branch.
+
+git commit -m "Merge feature-branch into develop" // 
+
+git push origin develop
+
+
+
+#open project path then go through below commands
+
+git checkout InactiveStatus
+git branch InactiveStatus
+git branch -a
+git checkout InactiveStatus
+
+# Push an existing repository from the command line
+ 
+git remote add origin https://github.com/c0ldlimit/vimcolors.git
+git push -u origin master
+
+
+Down kafka     
+-----------
+   
+kill -9 19566  
+	--19566 denote pid
+ ps -aux|grep kafka
+
+
+how to test in obj 
+------------------
+ 
+List<DigitalChannelMMS>  allTemplates = new ArrayList<DigitalChannelMMS>();
+			
+	DigitalChannelMMS test= new DigitalChannelMMS();
+	test.setTemplateName("HyperSMSTest_28Jul2022_122222");
+	allTemplates.add(test);
+	
+	test = new DigitalChannelMMS();	
+	test.setTemplateName("Test_2");
+	allTemplates.add(test);
+	
+	test = new DigitalChannelMMS();
+	test.setTemplateName("Test_3");
+	allTemplates.add(test);
+
+
+Add Lombok
+----------
+
+/home/seq_jeenetk/.m2/repository/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar
+
+
+Go where you Lombok jar is (e.g. (e.g. you can find in ~/.m2/repository/org/projectlombok/lombok/1.16.10/lombok-1.16.10.jar), run it (Example: java -jar lombok-1.16.10.jar). A window should appear, browse to your eclipse.exe location.
+Click on install.
+Launch Eclipse, update project configuration on all projects and voila.
+
+
+
+JSONnull
+---------
+
+if (json.get("testElement").isJsonNull())
+{
+    System.out.println("testElement is json null value"); //This will print.
+}
+if (json.get("nonExistentElement") == null)
+{
+    System.out.println("nonExistentElement does not exist"); //This will print.
+}
+
+
+Tomcat issue
+------------
+
+follow project properties -> Project Facets, make sure Dynamic Web Module & Java were ticked.
+ 
+	-tomcat is cannot work check this
+
+
+AWS Crendencials
+-----------------
+
+acount id : 129774657012
+username :  test-user1
+pwd : GE}[aulmBDF[3lA
+
+
+
+Couchabse flush
+--------------
+ 
+ cd var
+seq_jeenet@seq-admin-ThinkCentre-M92p:~/Jeenet/installation/True-persist/persistProdBackUpDec30/knowesis/sift/persist/var$ ll
+total 24
+drwxr-xr-x 4 seq_admin  seq_admin  4096 Dec 30  2021 ./
+drwxr-xr-x 3 seq_jeenet seq_jeenet 4096 Dec 18  2021 ../
+drwxr-xr-x 3 seq_admin  seq_admin  4096 Dec 30  2021 cbbackup_config-30dec2021/
+-rw-r--r-- 1 seq_admin  seq_admin  6148 Nov  5  2017 .DS_Store
+drwxr-xr-x 4 seq_admin  seq_admin  4096 Dec 18  2021 lib/
+seq_jeenet@seq-admin-ThinkCentre-M92p:~/Jeenet/installation/True-persist/persistProdBackUpDec30/knowesis/sift/persist/var$ sudo cp -r cbbackup_config-30dec2021/ ../
+[sudo] password for seq_jeenet: 
+seq_jeenet@seq-admin-ThinkCentre-M92p:~/Jeenet/installation/True-persist/persistProdBackUpDec30/knowesis/sift/persist/var$ ls
+seq_jeenet@seq-admin-ThinkCentre-M92p:~/Jeenet/installation/True-persist/persistProdBackUpDec30/knowesis/sift/persist/var$ sudo rm rf *
+rm: cannot remove 'rf': No such file or directory
+rm: cannot remove 'cbbackup_config-30dec2021': Is a directory
+rm: cannot remove 'lib': Is a directory
+seq_jeenet@seq-admin-ThinkCentre-M92p:~/Jeenet/installation/True-persist/persistProdBackUpDec30/knowesis/sift/persist/var$ ls
+cbbackup_config-30dec2021  lib
+seq_jeenet@seq-admin-ThinkCentre-M92p:~/Jeenet/installation/True-persist/persistProdBackUpDec30/knowesis/sift/persist/var$ sudo rm rf cbbackup_config-30dec2021
+rm: cannot remove 'rf': No such file or directory
+rm: cannot remove 'cbbackup_config-30dec2021': Is a directory
+seq_jeenet@seq-admin-ThinkCentre-M92p:~/Jeenet/installation/True-persist/persistProdBackUpDec30/knowesis/sift/persist/var$ sudo -rm rf *
+sudo: rf: command not found
+seq_jeenet@seq-admin-ThinkCentre-M92p:~/Jeenet/installation/True-persist/persistProdBackUpDec30/knowesis/sift/persist/var$ sudo rm -rf *
+seq_jeenet@seq-admin-ThinkCentre-M92p:~/Jeenet/installation/True-persist/persistProdBackUpDec30/knowesis/sift/persist/var$ ls
+
+
+how to go inside docker container
+---------------------------------
+
+docker exec -it <mycontainer> bash
+
